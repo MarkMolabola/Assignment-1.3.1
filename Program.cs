@@ -2,6 +2,31 @@
 {
     internal class Program
     {
+        static void CalculateTriangleArea()
+        {
+            Console.WriteLine("Enter the base of the triangle:");
+            double baseLength = Convert.ToDouble(Console.ReadLine());
+            Console.WriteLine("Enter the height of the triangle:");
+            double height = Convert.ToDouble(Console.ReadLine());
+            double area = 0.5 * baseLength * height;
+            Console.WriteLine($"The area of the triangle is: {area}");
+        }
+        static void CalculateSquareArea()
+        {
+            Console.WriteLine("Enter the side length of the square:");
+            double side = Convert.ToDouble(Console.ReadLine());
+            double area = side * side;
+            Console.WriteLine($"The area of the square is: {area}");
+        }
+        static void CalculateRectangleArea()
+        {
+            Console.WriteLine("Enter the length of the rectangle:");
+            double length = Convert.ToDouble(Console.ReadLine());
+            Console.WriteLine("Enter the width of the rectangle:");
+            double width = Convert.ToDouble(Console.ReadLine());
+            double area = length * width;
+            Console.WriteLine($"The area of the rectangle is: {area}");
+        }
         static void Main(string[] args)
         {
             //Write a program in C# to calculate area of triangle, square and rectangle.
@@ -51,31 +76,7 @@
 
 
 
-            void CalculateTriangleArea()
-            {
-                Console.WriteLine("Enter the base of the triangle:");
-                double baseLength = Convert.ToDouble(Console.ReadLine());
-                Console.WriteLine("Enter the height of the triangle:");
-                double height = Convert.ToDouble(Console.ReadLine());
-                double area = 0.5 * baseLength * height;
-                Console.WriteLine($"The area of the triangle is: {area}");
-            }
-            void CalculateSquareArea()
-            {
-                Console.WriteLine("Enter the side length of the square:");
-                double side = Convert.ToDouble(Console.ReadLine());
-                double area = side * side;
-                Console.WriteLine($"The area of the square is: {area}");
-            }
-            void CalculateRectangleArea()
-            {
-                Console.WriteLine("Enter the length of the rectangle:");
-                double length = Convert.ToDouble(Console.ReadLine());
-                Console.WriteLine("Enter the width of the rectangle:");
-                double width = Convert.ToDouble(Console.ReadLine());
-                double area = length * width;
-                Console.WriteLine($"The area of the rectangle is: {area}");
-            }
+            
         }
     }
 
